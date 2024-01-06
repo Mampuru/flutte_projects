@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Hive.initFlutter();
+  await initialiseHive();
   runApp(MyApp());
 }
 
