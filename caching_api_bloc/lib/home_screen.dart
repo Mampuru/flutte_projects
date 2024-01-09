@@ -2,7 +2,8 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:medium_bloc_cache_project/home/home.dart';
+
+import 'bloc/posts_cubit.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
