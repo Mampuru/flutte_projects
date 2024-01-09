@@ -3,6 +3,8 @@ import 'package:flutter/foundation.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
 import 'package:medium_bloc_cache_project/home/home.dart';
 
+import '../models/post_model.dart';
+
 part 'posts_state.dart';
 
 class PostsCubit extends Cubit<PostsState> {
