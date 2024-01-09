@@ -2,7 +2,8 @@ import 'dart:convert';
 
 import 'package:hive/hive.dart';
 import 'package:http/http.dart' as http;
-import 'package:medium_bloc_cache_project/home/home.dart';
+
+import '../models/post_model.dart';
 
 class PostsRepository {
   PostsRepository({required Box<PostsModel?> postsBox}) : _postsBox = postsBox;
