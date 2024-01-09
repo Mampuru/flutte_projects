@@ -1,8 +1,8 @@
-import 'package:bloc/bloc.dart';
 import 'package:flutter/foundation.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
-import 'package:medium_bloc_cache_project/home/home.dart';
 
+import '../api/posts_repository.dart';
 import '../models/post_model.dart';
 
 part 'posts_state.dart';
