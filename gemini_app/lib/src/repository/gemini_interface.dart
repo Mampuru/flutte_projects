@@ -1,7 +1,8 @@
 import 'dart:async';
 import 'dart:typed_data';
-import 'package:flutter_gemini/src/models/candidates/candidates.dart';
-import '../../flutter_gemini.dart';
+
+import '../../gemini_app.dart';
+import '../models/candidates/candidates.dart';
 
 abstract class GeminiInterface {
   /// [listModels]
