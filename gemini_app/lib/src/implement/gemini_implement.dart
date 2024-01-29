@@ -1,7 +1,10 @@
 import 'dart:convert';
 import 'dart:typed_data';
 import 'package:dio/dio.dart';
+import '../../gemini_app.dart';
 import '../config/constants.dart';
+import '../models/candidates/candidates.dart';
+import '../repository/gemini_interface.dart';
 import 'gemini_service.dart';
 
 /// [GeminiImpl]

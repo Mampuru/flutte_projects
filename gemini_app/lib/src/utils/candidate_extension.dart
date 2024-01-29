@@ -1,4 +1,4 @@
-import 'package:flutter_gemini/src/models/candidates/candidates.dart';
+import '../models/candidates/candidates.dart';
 
 /// [CandidateExtension] used when wanna get [output] simply
 extension CandidateExtension on Candidates {

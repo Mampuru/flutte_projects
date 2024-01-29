@@ -1,4 +1,6 @@
 
+import '../../gemini_app.dart';
+
 class Constants {
   Constants._();
   static const String defaultModel = 'models/gemini-pro';

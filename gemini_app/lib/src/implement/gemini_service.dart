@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
-import '../init.dart';
+import '../../gemini_app.dart';
 
 /// [GeminiService] is api helper service class
 class GeminiService {

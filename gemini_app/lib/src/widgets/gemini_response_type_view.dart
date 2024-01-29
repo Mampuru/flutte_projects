@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gemini/flutter_gemini.dart';
-import 'package:flutter_gemini/src/provider/gemini_response_provider.dart';
+
+import '../../gemini_app.dart';
+import '../provider/gemini_response_provider.dart';
+
 
 class GeminiResponseTypeView extends StatelessWidget {
   final Widget Function(
