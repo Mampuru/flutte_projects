@@ -2,7 +2,15 @@ import 'dart:async';
 import 'dart:io';
 import 'dart:typed_data';
 
+import 'package:dio/dio.dart';
+import 'package:gemini_app/src/provider/gemini_response_provider.dart';
 import 'package:gemini_app/src/repository/gemini_interface.dart';
+
+import '../gemini_app.dart';
+import 'config/constants.dart';
+import 'implement/gemini_implement.dart';
+import 'implement/gemini_service.dart';
+import 'models/candidates/candidates.dart';
 
 class MyHttpOverrides extends HttpOverrides {
   @override
