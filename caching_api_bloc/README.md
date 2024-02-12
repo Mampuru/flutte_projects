@@ -1,2 +1,2 @@
-# flutter-projects
-The repo house all my flutter application and code snippets
+# Caching Api Bloc 
+The api implements caches strategy for REST API data using the bloc state management library. 
