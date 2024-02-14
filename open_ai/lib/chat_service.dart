@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 import 'api_config/api_key.dart';
 
@@ -19,7 +20,9 @@ class ChatService {
       );
       return null;
     } catch (e) {
-      print("error $e");
+      if (kDebugMode) {
+        print("error $e");
+      }
     }
   }
 }
