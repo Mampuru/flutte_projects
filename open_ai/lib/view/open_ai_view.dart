@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'chat_service.dart';
+import '../controller/chat_service.dart';
 
 class OpenAIEntryScreen extends StatefulWidget {
   const OpenAIEntryScreen({super.key});
