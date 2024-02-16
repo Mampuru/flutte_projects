@@ -1,9 +1,9 @@
 import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
-import 'api_config/api_key.dart';
-import 'models/message_model.dart';
-import 'models/request_model.dart';
-import 'models/response_model.dart';
+import '../api_config/api_key.dart';
+import '../models/message_model.dart';
+import '../models/request_model.dart';
+import '../models/response_model.dart';
 
 class ChatService {
   static final Uri chatUri = Uri.parse('https://api.openai.com/v1/chat/completions');
