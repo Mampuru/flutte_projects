@@ -1,8 +1,9 @@
-# flutter-projects
-The repo house all my flutter application and code snippets
+# Flutter Projects
+[![My Skills](https://skillicons.dev/icons?i=dart,flutter)](https://skillicons.dev)
+The repo house all my flutter application and code snippet, feature/implemetation examples. 
 
-### Caching-api-bloc
-The app focuses on caching strategy of API data.State management used is bloc connecting to REST API.
+### **Caching Api Bloc** -> The app focuses on caching strategy of API data.State management used is bloc connecting to REST API.
 
-### Gemini-app
-The app integrates the gemini AI model
+### **Gemini-app** -> The mobile app integrates the gemini AI model.
+
+
