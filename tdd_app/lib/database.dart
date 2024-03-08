@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tdd_app/source_enum.dart';
 import 'package:tdd_app/user_model.dart';
 
 
@@ -12,7 +13,7 @@ class Database extends ChangeNotifier {
     notifyListeners();
   }
 
-//Moves user from active to achived
+//Moves user from active to achieved
   void moveToArchived(User user) {
     archivedUsers.add(user);
     activeUsers.remove(user);
@@ -38,7 +39,5 @@ class Database extends ChangeNotifier {
         notifyListeners();
         return true;
     }
-
-    return false;
   }
 }
