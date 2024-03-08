@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:user_manager/utils/source_enum.dart';
+import 'package:tdd_app/user_model.dart';
 
-import 'user.dart';
 
 class Database extends ChangeNotifier {
   List<User> activeUsers = [];
