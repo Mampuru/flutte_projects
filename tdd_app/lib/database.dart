@@ -8,7 +8,7 @@ class Database extends ChangeNotifier {
   List<User> archivedUsers = [];
 
 //Creates new user and adds to activeUsers
-  void addNewUser(User user) {
+  Future<void> addNewUser(User user) async {
     activeUsers.add(user);
     notifyListeners();
   }
