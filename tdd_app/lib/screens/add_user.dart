@@ -54,7 +54,7 @@ class AddUser extends StatelessWidget {
                     //Retrieve the Database Provider
                     Database database = Provider.of<Database>(context, listen: false);
                     //Create User with the first name and last name
-                    User user = User(_firstNameController.text, _lastNameController.text);
+                    User user = User(firstName: _firstNameController.text,lastName: _lastNameController.text);
 
                     //Add user to List of active users
                     database.addNewUser(user).then((value) =>
