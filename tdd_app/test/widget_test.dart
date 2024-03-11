@@ -30,5 +30,26 @@ void main() {
         expect(textField, findsNWidgets(2));
       });
 
+  testWidgets('Verify that the add user button adds user to database',
+          (WidgetTester tester) async {
+        //Arrange - Pump AddUser() widget to tester
+        await tester.pumpWidget(MyApp(child: AddUser()));
 
+        //Act - Find TextFormFields and button
+        var fNameField = find.byKey(const Key("firstNameKey"));
+        var lNameField = find.byKey(const Key("lastNameKey"));
+        var submitBtn = find.byType(ElevatedButton);
+
+        //Fill text inputs
+        await tester.enterText(fNameField, "John");
+        await tester.enterText(lNameField, "Doe");
+
+        await tester.tap(submitBtn);
+
+        //Listen for change in widget state
+        await tester.pump();
+
+        //Assert - Check that success snackbar pops up
+        expect(find.text("User added successfully"), findsOneWidget);
+      });
 }
