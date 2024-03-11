@@ -1,6 +1,6 @@
 class User {
-  String firstName;
-  String lastName;
+  String? firstName;
+  String? lastName;
 
-  User(this.firstName, this.lastName);
+  User({required String firstName, required String lastName});
 }
