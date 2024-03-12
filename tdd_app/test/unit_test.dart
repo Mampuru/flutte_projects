@@ -8,7 +8,20 @@ void main() {
 
   setUp(() {
     database = Database();
-    user = User(firstName: "Ikay", lastName: "Codes");
+    user = User(firstName: "John", lastName: "Doe");
   });
+
+  group('Test database crud functions', () {
+    test('Create new user when addNewUser method is called', () {
+      //Act
+      database.addNewUser(user);
+
+      //Assert
+      expect(database.activeUsers.contains(user), true);
+    });
+
+
+  });
+
 
 }
