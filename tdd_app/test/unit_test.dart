@@ -1,3 +1,4 @@
+
 import 'package:flutter_test/flutter_test.dart';
 import 'package:tdd_app/database.dart';
 import 'package:tdd_app/user_model.dart';
@@ -20,6 +21,14 @@ void main() {
       expect(database.activeUsers.contains(user), true);
     });
 
+    test('Move user to archived when moveToArchived method is called', () {
+      //Act
+      database.moveToArchived(user);
+
+      //Assert
+      expect(database.activeUsers.contains(user), false);
+      expect(database.archivedUsers.contains(user), true);
+    });
 
   });
 
