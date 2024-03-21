@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
     return ChangeNotifierProvider(
         create: (context) => Database(),
         child: MaterialApp(
+          debugShowCheckedModeBanner: false,
           title: 'TDD APP',
           theme: ThemeData(
             colorScheme: ColorScheme.fromSeed(seedColor: Colors.yellow),
