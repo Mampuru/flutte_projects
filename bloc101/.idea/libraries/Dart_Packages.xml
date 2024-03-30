@@ -51,13 +51,6 @@
             </list>
           </value>
         </entry>
-        <entry key="flutte_projects">
-          <value>
-            <list>
-              <option value="$PROJECT_DIR$/../lib" />
-            </list>
-          </value>
-        </entry>
         <entry key="flutter">
           <value>
             <list>
@@ -204,7 +197,6 @@
       <root url="file://$USER_HOME$/Developer/flutter/bin/cache/pkg/sky_engine/lib" />
       <root url="file://$USER_HOME$/Developer/flutter/packages/flutter/lib" />
       <root url="file://$USER_HOME$/Developer/flutter/packages/flutter_test/lib" />
-      <root url="file://$PROJECT_DIR$/../lib" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
