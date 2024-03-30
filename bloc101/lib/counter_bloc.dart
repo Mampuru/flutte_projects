@@ -16,14 +16,21 @@ class CounterState {
 
 // BLoC
 class CounterBloc extends Bloc<CounterEvent, CounterState> {
-  CounterBloc() : super(CounterState(0));
+  CounterBloc() : super(CounterState(0)) {
+    on<IncrementEvent>(_onIncrement);
+    on<DecrementEvent>(_onDecrement);
+  }
+
+  void _onIncrement(IncrementEvent event, Emitter<CounterState> emit) {
+    emit(CounterState(state.count + 1));
+  }
+
+  void _onDecrement(DecrementEvent event, Emitter<CounterState> emit) {
+    emit(CounterState(state.count - 1));
+  }
 
   @override
   Stream<CounterState> mapEventToState(CounterEvent event) async* {
-    if (event is IncrementEvent) {
-      yield CounterState(state.count + 1);
-    } else if (event is DecrementEvent) {
-      yield CounterState(state.count - 1);
-    }
+    // This method is now empty as we are using the on method
   }
 }
