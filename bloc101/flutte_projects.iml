@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/gemini_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/gemini_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/gemini_app/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/social_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/social_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/social_app/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/build" />
+      <excludeFolder url="file://$MODULE_DIR$/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/tdd_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/tdd_app/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/tdd_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/open_ai/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/open_ai/build" />
+      <excludeFolder url="file://$MODULE_DIR$/open_ai/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/caching_api_bloc/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/caching_api_bloc/build" />
+      <excludeFolder url="file://$MODULE_DIR$/caching_api_bloc/.dart_tool" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Dart SDK" level="project" />
+    <orderEntry type="library" name="Dart Packages" level="project" />
+  </component>
+</module>
