@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:http/http.dart' as http;
 
 // Events
@@ -51,7 +52,7 @@ class WeatherBloc extends Bloc<WeatherEvent, WeatherState> {
   }
 
   Future<Map<String, dynamic>> fetchWeather(String cityName) async {
-    final apiKey = 'YOUR_API_KEY';  // Replace with your API key
+    final apiKey = dotenv.env['API_KEY'];  // Replace with your API key
     final apiUrl = 'https://api.openweathermap.org/data/2.5/weather?q=$cityName&appid=$apiKey&units=metric';
 
     final response = await http.get(Uri.parse(apiUrl));
