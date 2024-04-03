@@ -31,28 +31,27 @@ class WeatherState {
 
 // BLoC
 class WeatherBloc extends Bloc<WeatherEvent, WeatherState> {
-  WeatherBloc() : super(WeatherState(cityName: ''));
+  WeatherBloc() : super(WeatherState(cityName: '')) {
+    on<FetchWeatherEvent>(_onFetchWeather);
+  }
 
-  @override
-  Stream<WeatherState> mapEventToState(WeatherEvent event) async* {
-    if (event is FetchWeatherEvent) {
-      yield state.copyWith(isLoading: true, cityName: event.cityName);
+  void _onFetchWeather(FetchWeatherEvent event, Emitter<WeatherState> emit) async {
+    emit(state.copyWith(isLoading: true, cityName: event.cityName));
 
-      try {
-        final weather = await fetchWeather(event.cityName);
-        yield state.copyWith(
-          isLoading: false,
-          temperature: weather['main']['temp'],
-          weatherCondition: weather['weather'][0]['main'],
-        );
-      } catch (error) {
-        yield state.copyWith(isLoading: false, errorMessage: error.toString());
-      }
+    try {
+      final weather = await fetchWeather(event.cityName);
+      emit(state.copyWith(
+        isLoading: false,
+        temperature: weather['main']['temp'],
+        weatherCondition: weather['weather'][0]['main'],
+      ));
+    } catch (error) {
+      emit(state.copyWith(isLoading: false, errorMessage: error.toString()));
     }
   }
 
   Future<Map<String, dynamic>> fetchWeather(String cityName) async {
-    final apiKey = dotenv.env['API_KEY'];  // Replace with your API key
+    final apiKey = dotenv.env['API_KEY'];   // Replace with your API key
     final apiUrl = 'https://api.openweathermap.org/data/2.5/weather?q=$cityName&appid=$apiKey&units=metric';
 
     final response = await http.get(Uri.parse(apiUrl));
