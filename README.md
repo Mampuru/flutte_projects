@@ -8,4 +8,5 @@
 * **Open AI App** -> The mobile app integrates the Open AI model.
 * **TDD App** -> The mobile app for TDD.
 * **Social platform App** -> The mobile app allow users to chat ,voice call and video call.
+* **Bloc 101 App** -> The mobile app practicing different implementation using the bloc pattern.
 
